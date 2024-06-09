@@ -1,0 +1,292 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+header {
+    display: inline;
+}
+
+.title {
+    text-align: center;
+    background-color: #0F1035;
+    color: #DCF2F1;
+    padding: 15px;
+    font-size: larger;
+}
+
+nav {
+    background-color: #365486;
+    padding: 3px;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+    padding-inline: 2.5rem;
+    gap: 2rem;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav a {
+    font-size: 107%;
+    font-weight: bold;
+    text-decoration: none;
+    color: #e6f7f6;
+    padding: 10px 15px;
+    border-radius: 13px;
+
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+    background-color: #DCF2F1;
+    color: #365486;
+
+}
+
+nav a:active{
+    background-color: #5dcce7;
+    color: white;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    background-color: #c2e3ec;
+}
+
+main h1 {
+    color: #272b77;
+}
+
+#profile-element {
+    display: flex;
+    gap: 25px;
+}
+
+#profile-image {
+    width: 15%;
+}
+
+#profile-element p {
+    margin-top: 0;
+    line-height: 1.5;
+}
+
+#profile-content {
+    display: flex;
+}
+
+#profile-content td {
+    vertical-align: top;
+    padding: 5px;
+}
+
+.category {
+    width: 180px;
+}
+
+#content {
+    display: flex;
+    flex: 5;
+    flex-flow: column nowrap;
+    gap: 15px;
+}
+
+.featured-image {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    object-position: center;
+}
+
+#MAN{
+    object-position: center top;
+}
+
+.card {
+    box-shadow: 3px 3px 8px 0px #7a7a7a;
+    border-radius: 10px;
+    background-color: white;
+}
+
+
+aside {
+    flex: 1;
+}
+
+.article-content {
+    padding: 25px;
+    padding-top: 0;
+}
+
+#pendidikan p, #pengalaman p {
+    text-align: justify;
+    font-size: 110%;
+    line-height: 1.5;
+}
+
+.about {
+    padding: 20px;
+}
+
+.about-me{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-bottom: 20px
+}
+
+.about-me h2{
+    margin-top: 0;
+}
+
+.about-img{
+    border-radius: 50%;
+    padding: 7px;
+    box-shadow: 0px 0px 8px 0 #9e9e9e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-img img {
+    width: 110px;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.about-me p{
+    margin-top: 15px;
+}
+
+.social-media{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.social-media h2{
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.social-media ul{
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    gap: 30px;
+    font-size: 25px;
+}
+
+.social-media li{
+    list-style-type: none;
+}
+
+.social-media a{
+    color: #25286d;
+}
+
+.social-media a:active{
+    color: #4ecff0;
+}
+
+footer {
+    padding: 10px;
+    background-color: #0F1035;
+}
+
+#contact-person {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    color: #DCF2F1;
+}
+
+#contact {
+    text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        flex-flow: column;
+    }
+
+    #contact-person {
+        font-size: 90%;
+    }
+
+    .social-media ul{
+        gap: 40px;
+    }
+
+    #profile-image{
+        width: 20%;
+    }
+}
+
+@media screen and (max-width:691px) {
+    #profile-element {
+        flex-flow: column;
+        align-items: center;
+    }
+    
+    #profile-image {
+        width: 40%;
+    }
+
+    #profile-content {
+        font-size: 75%;
+    }
+
+    .category {
+        width: 30%;
+    }
+
+    nav ul {
+        padding-inline: 0;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 90%;
+    }
+}
+
+@media screen and (max-width:390px) {
+    #profile-content {
+        font-size: 70%;
+    }
+    
+    .title {
+        font-size: medium;
+    }
+    
+    #pendidikan p, #pengalaman p {
+        font-size: 85%;
+    }
+    
+    nav {
+        padding: 2px;
+    }
+    
+    nav ul {
+        gap: 1rem;
+    }
+
+    #contact-person {
+        font-size: 85%;
+    }
+
+    .featured-image {
+        max-height: 200px;
+    }
+}
